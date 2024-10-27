@@ -7,10 +7,10 @@ columnas. Utiliza un bucle while
 echo "<table border='1'><tr>";
 
 $i = 1;
-while ($i <= 10) {
+do {
     echo "<td>$i</td>";
     $i++;
-}
+} while ($i <= 10);
 
 echo "</tr></table>";
 
