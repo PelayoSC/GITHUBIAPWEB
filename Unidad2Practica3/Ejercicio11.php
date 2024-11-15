@@ -34,7 +34,7 @@ $array = array(
 
 $json = json_encode($array, JSON_PRETTY_PRINT);
 
-header('Content-Type: application/json'); // Configurar el encabezado de la respuesta como JSON
+header('Content-Type: application/json');
 echo $json;
 
 ?>
