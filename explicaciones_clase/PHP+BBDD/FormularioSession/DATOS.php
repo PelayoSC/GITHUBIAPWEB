@@ -1,6 +1,5 @@
 <?php
 
-
 ?>
 <!DOCTYPE html>
         <form action="RECUERDOS.php" method="post">
