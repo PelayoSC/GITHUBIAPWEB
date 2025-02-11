@@ -4,7 +4,7 @@ session_start();
 
 if (isset($_POST['letras'])) {
     $letra = $_POST['letras'];
-    include 'conexion.php';
+    include '../conexion.php';
 
     if ($mysqli->connect_error) {
         die("Connection failed: " . $mysqli->connect_error);

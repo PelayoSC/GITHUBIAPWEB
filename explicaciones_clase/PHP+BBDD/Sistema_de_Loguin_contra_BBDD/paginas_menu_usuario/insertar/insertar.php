@@ -8,7 +8,7 @@ $i = $_POST['descripcion'];
 $p = $_POST['precio'];
 $e = $_POST['unidades'];
 
-include 'conexion.php';
+include '../../conexion.php';
 
 $mysqli->query("insert into articulos(nombreArticulo, descripcion, precio, unidades) values ('$a', '$i', $p, $e)");
 $result = $mysqli->query("SELECT * FROM articulos");

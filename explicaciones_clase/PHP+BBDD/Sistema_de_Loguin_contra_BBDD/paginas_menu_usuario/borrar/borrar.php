@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-include 'conexion.php';
+include '../../conexion.php';
 
 if ($mysqli->connect_error) {
     echo "Error de conexión: " . $mysqli->connect_error;
