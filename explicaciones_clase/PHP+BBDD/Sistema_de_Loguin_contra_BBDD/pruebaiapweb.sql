@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 11-02-2025 a las 10:41:37
+-- Tiempo de generación: 11-02-2025 a las 12:33:31
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de datos: `pruebaiaweb`
+-- Base de datos: `pruebaiapweb`
 --
 
 -- --------------------------------------------------------
@@ -28,8 +28,8 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `articulos` (
-  `id_articulo` int(11) NOT NULL,
-  `nombre_articulo` varchar(15) NOT NULL,
+  `idArticulo` int(11) NOT NULL,
+  `nombreArticulo` varchar(15) NOT NULL,
   `descripcion` varchar(100) NOT NULL,
   `precio` float NOT NULL,
   `unidades` int(4) NOT NULL
@@ -39,7 +39,7 @@ CREATE TABLE `articulos` (
 -- Volcado de datos para la tabla `articulos`
 --
 
-INSERT INTO `articulos` (`id_articulo`, `nombre_articulo`, `descripcion`, `precio`, `unidades`) VALUES
+INSERT INTO `articulos` (`idArticulo`, `nombreArticulo`, `descripcion`, `precio`, `unidades`) VALUES
 (5, 'ordenador', 'ordenador 01', 50, 1);
 
 -- --------------------------------------------------------
@@ -52,7 +52,7 @@ CREATE TABLE `usuarios` (
   `IdUsuario` bigint(20) UNSIGNED NOT NULL,
   `nombre` varchar(15) NOT NULL,
   `edad` int(3) NOT NULL,
-  `password` varchar(15) NOT NULL,
+  `contraseña` varchar(15) NOT NULL,
   `email` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -60,14 +60,15 @@ CREATE TABLE `usuarios` (
 -- Volcado de datos para la tabla `usuarios`
 --
 
-INSERT INTO `usuarios` (`IdUsuario`, `nombre`, `edad`, `password`, `email`) VALUES
+INSERT INTO `usuarios` (`IdUsuario`, `nombre`, `edad`, `contraseña`, `email`) VALUES
 (2, 'Pepe', 0, 'pepe', 'pepe@gmail.com'),
 (29, 'pedro ', 34, 'picapiedra', 'loco@gmail.com'),
 (30, 'pepe2', 0, 'pepe2', ''),
 (31, 'pepe456', 0, 'hola', ''),
 (32, 'pepe3', 23, 'pepe3', 'cortinflowers@gmail.com'),
 (33, 'Sergiohg', 33, 'Sistemas1', 'osiosi@gmail.com'),
-(34, 'Yolanda', 20, 'Sistemas1', 'yolandais@gmail.com');
+(34, 'Yolanda', 20, 'Sistemas1', 'yolandais@gmail.com'),
+(35, 'Sirenita', 50, 'Sistemas1', 'correo@gmail.com');
 
 --
 -- Índices para tablas volcadas
@@ -77,7 +78,7 @@ INSERT INTO `usuarios` (`IdUsuario`, `nombre`, `edad`, `password`, `email`) VALU
 -- Indices de la tabla `articulos`
 --
 ALTER TABLE `articulos`
-  ADD PRIMARY KEY (`id_articulo`);
+  ADD PRIMARY KEY (`idArticulo`);
 
 --
 -- Indices de la tabla `usuarios`
@@ -94,13 +95,13 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT de la tabla `articulos`
 --
 ALTER TABLE `articulos`
-  MODIFY `id_articulo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `idArticulo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `IdUsuario` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
+  MODIFY `IdUsuario` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

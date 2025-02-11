@@ -15,6 +15,6 @@ if($comprobacion->num_rows > 0) {
     $mysqli->query("insert into usuarios(nombre, edad, contraseña, email) values ('$n', $i, '$p', '$e')");
     echo "Usuario registrado con exito";
 }
-echo '<a href="Formulario.html">Accerder a la web</a>';
+echo '<a href="index.html">Accerder a la web</a>';
     $mysqli->close();
 ?>
