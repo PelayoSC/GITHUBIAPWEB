@@ -1,0 +1,69 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('ESPAÑA.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contenedor del formulario */
+form {
+    background: rgba(255, 255, 255, 0.9); /* Fondo semitransparente para mejor lectura */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Títulos */
+h1 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Etiquetas */
+label {
+    font-weight: bold;
+    color: #555;
+    display: block;
+    text-align: center;
+    margin-bottom: 5px;
+
+
+}
+
+/* Campos de entrada */
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+
+}
+
+/* Botón de envío */
+button {
+    background-color: #c91d02; /* Rojo de la bandera */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #a51802; /* Rojo más oscuro al pasar el ratón */
+}
